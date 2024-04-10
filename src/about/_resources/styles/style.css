@@ -1,0 +1,140 @@
+/* CONTENT */
+/* ABOUT US */
+#about-us {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    background-color: var(--ivos-orange);
+    padding: 0 5em;
+}
+
+#about-us-decor {
+    position: absolute;
+    height: 150%;
+    right: -25%;
+    z-index: -1;
+}
+
+#about-us-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+    width: 50%;
+}
+
+#about-us-photos {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+}
+
+
+#about-us-content span:hover {
+    color: var(--ivos-yellow);
+}
+
+.photos-column {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+}
+
+.photos-column img {
+    background: var(--ivos-yellow);
+    border: 0.75em solid var(--ivos-white);
+    width: 100%;
+}
+
+#about-us-photos-column1 {
+    width: 15em;
+}
+
+.marquee-content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+}
+
+#about-us-photos-column1 .marquee-content {
+    animation: scroll-top-down linear 40s infinite;
+}
+
+#about-us-photos-column2 {
+    width: 10em;
+}
+
+#about-us-photos-column2 .marquee-content {
+    animation: scroll-top-down linear 20s infinite reverse;
+}
+
+/* MEMBERS */
+#members {
+    background-color: var(--ivos-yellow);
+    padding: 0 10em;
+}
+
+#members-name {
+    position: absolute;
+    top: -0.1em;
+    right: -0.1em;
+    display: flex;
+    flex-flow: column nowrap;
+
+    font-family: "Arsis";
+    font-size: 15em;
+    line-height: 0.75em;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--ivos-yellow);
+    mix-blend-mode: multiply;
+}
+
+#members-name span:nth-of-type(3) {
+    color: var(--ivos-yellow);
+}
+
+#members-photo {
+    mix-blend-mode: overlay;
+    z-index: -1;
+    position: absolute;
+    height: 75%;
+    right: -0.5em;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}   
+
+#members-description {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    width: 50%;
+    gap: 1em;
+}
+
+#members-description hr {
+    width: 100%;
+    border: 1px solid var(--ivos-black);
+}
+
+@keyframes scroll-top-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-100% - 2em));
+    }
+}
+
+h2 {
+    font-family: "Arsis";
+    font-size: 10em;
+}
