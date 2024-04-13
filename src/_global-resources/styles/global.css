@@ -146,7 +146,7 @@ header {
 }
 
 #header-logo:hover {
-    transform: rotate(360deg) scale(150%, 150%);
+    transform: rotate(360deg) scale(125%, 125%);
 }
 
 #header-links {
@@ -348,7 +348,7 @@ footer a:hover {
 }
 
 #footer-logo:hover {
-    transform: rotate(360deg) scale(200%, 200%);
+    transform: rotate(360deg) scale(125%, 125%);
 }
 
 #footer-album {
